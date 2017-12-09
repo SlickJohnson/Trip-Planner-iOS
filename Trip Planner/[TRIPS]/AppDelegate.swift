@@ -9,7 +9,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     window = UIWindow(frame: UIScreen.main.bounds)
 
     if UserDefaults.standard.value(forKey: "hasSeenOnboardFlow") == nil {
-      let storyboard = UIStoryboard(name: "Signup", bundle: nil)
+      let storyboard = UIStoryboard(name: "Login", bundle: nil)
       window?.rootViewController = storyboard.instantiateInitialViewController()
     }
 

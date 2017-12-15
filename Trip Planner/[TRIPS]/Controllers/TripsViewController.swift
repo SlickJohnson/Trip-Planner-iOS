@@ -35,10 +35,17 @@ extension TripsViewController: UITableViewDataSource {
   }
 
   func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    UIView.animate(withDuration: 0.25) {
+    UIView.animate(withDuration: 0.25, animations: {
       if let cell = tableView.cellForRow(at: indexPath) as? TripTableViewCell {
-        cell.roundedView.transform = .init(scaleX: 1.05, y: 1.05)
-//        cell.roundedView.backgroundColor = UIColor(red: 0.95, green: 0.95, blue: 0.95, alpha: 1)
+        cell.nesetedView.transform = .init(scaleX: 1.05, y: 1.05)
+      }
+    }) { (completed) in
+      if completed {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        if let tripDetaisViewController = storyboard.instantiateViewController(withIdentifier: "TripDetailsViewController") as? TripDetailsViewController {
+          tripDetaisViewController.modalPresentationStyle = .overCurrentContext
+          self.present(tripDetaisViewController, animated: true)
+        }
       }
     }
   }
@@ -46,8 +53,8 @@ extension TripsViewController: UITableViewDataSource {
   func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
     UIView.animate(withDuration: 0.25) {
       if let cell = tableView.cellForRow(at: indexPath) as? TripTableViewCell {
-        cell.roundedView.transform = .identity
-//        cell.contentView.backgroundColor = .clear
+        cell.nesetedView.transform = .identity
+        //        cell.contentView.backgroundColor = .clear
       }
     }
   }

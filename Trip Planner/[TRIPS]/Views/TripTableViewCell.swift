@@ -8,11 +8,11 @@ final class TripTableViewCell: UITableViewCell {
   @IBOutlet weak var tripWaypointTextView: UITextView!
   /// The size of the cell displayed in a UITableView
   static let cellHeight: CGFloat = 166
-
-  @IBOutlet weak var roundedView: UIView!
+  /// The visible view of the cell that's animated and customized.
+  @IBOutlet weak var nesetedView: UIView!
 
   override func awakeFromNib() {
     super.awakeFromNib()
-    roundedView.layer.cornerRadius = 5
+    nesetedView.layer.cornerRadius = 5
   }
 }

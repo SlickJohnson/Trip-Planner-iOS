@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMT-gT-9Rk">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DMT-gT-9Rk">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13527"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -16,21 +16,21 @@
             <string>Helvetica-Light</string>
         </array>
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue-Bold</string>
+            <string>HelveticaNeue</string>
         </array>
     </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Login View Controller-->
         <scene sceneID="gcK-SL-KNP">
             <objects>
-                <viewController id="DMT-gT-9Rk" sceneMemberID="viewController">
+                <viewController id="DMT-gT-9Rk" customClass="LoginViewController" customModule="_TRIPS_" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Cf-oJ-khL">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qT3-pb-fN1" customClass="SpacedFontTextField" customModule="_TRIPS_" customModuleProvider="target">
-                                <rect key="frame" x="89" y="257" width="256" height="30"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.3027611301369863" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="EMAIL" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qT3-pb-fN1" customClass="SpacedFontTextField" customModule="_TRIPS_" customModuleProvider="target">
+                                <rect key="frame" x="38" y="257" width="307" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.15068826079368591" blue="0.25867706537246704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
                                 <textInputTraits key="textInputTraits" textContentType="url"/>
@@ -40,29 +40,18 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-LL-7Yv" customClass="SpacedFontTextField" customModule="_TRIPS_" customModuleProvider="target">
-                                <rect key="frame" x="89" y="318" width="256" height="30"/>
-                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.3027611301369863" colorSpace="custom" customColorSpace="sRGB"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="PASSWORD" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gyZ-LL-7Yv" customClass="SpacedFontTextField" customModule="_TRIPS_" customModuleProvider="target">
+                                <rect key="frame" x="38" y="318" width="308" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="0.14999999999999999" colorSpace="custom" customColorSpace="sRGB"/>
                                 <color key="textColor" red="0.0" green="0.15068826079368591" blue="0.25867706537246704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Light" family="Helvetica" pointSize="17"/>
-                                <textInputTraits key="textInputTraits" textContentType="password"/>
+                                <textInputTraits key="textInputTraits" secureTextEntry="YES" textContentType="password"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
                                         <real key="value" value="2.25"/>
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="EMAIL:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Qiu-ow-UU1" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
-                                <rect key="frame" x="16" y="264" width="58" height="15.5"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" red="0.89905315637588501" green="0.85477656126022339" blue="0.85427373647689819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <nil key="highlightedColor"/>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
-                                        <real key="value" value="2.25"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="[TRIPS]" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pe2-Xz-srp" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
                                 <rect key="frame" x="92" y="140" width="190" height="21"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="20"/>
@@ -74,10 +63,21 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="PASS:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjL-YO-K6d" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
-                                <rect key="frame" x="25.5" y="325" width="48.5" height="16"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
-                                <color key="textColor" red="0.89905315637588501" green="0.85477656126022339" blue="0.85427373647689819" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy5-U1-y9X">
+                                <rect key="frame" x="38" y="383" width="307" height="34"/>
+                                <color key="backgroundColor" red="0.89695030450820923" green="0.58335238695144653" blue="0.0078668994829058647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal">
+                                    <color key="titleColor" red="0.0" green="0.15068826079368591" blue="0.25867706537246704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginUserButton:" destination="DMT-gT-9Rk" eventType="touchUpInside" id="V9t-M5-Gza"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN / SIGNUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-tZ-p1g" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
+                                <rect key="frame" x="132.5" y="392.5" width="110" height="16.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
+                                <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
@@ -85,35 +85,26 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jy5-U1-y9X">
-                                <rect key="frame" x="38" y="383" width="298" height="34"/>
-                                <color key="backgroundColor" red="0.89695030450820923" green="0.58335238695144653" blue="0.0078668994829058647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <state key="normal" title="Login">
-                                    <color key="titleColor" red="0.0" green="0.15068826079368591" blue="0.25867706537246704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.15068826079368591" blue="0.25867706537246704" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="qT3-pb-fN1" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" multiplier="1.16" id="33O-Gy-FcJ"/>
+                            <constraint firstItem="qT3-pb-fN1" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" multiplier="1.16" constant="-25.999999999999972" id="33O-Gy-FcJ"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="centerY" secondItem="2Aj-DS-uUi" secondAttribute="centerY" multiplier="0.367" constant="24.435500000000005" id="4Pl-qW-KOO"/>
-                            <constraint firstItem="qT3-pb-fN1" firstAttribute="leading" secondItem="Qiu-ow-UU1" secondAttribute="trailing" constant="15" id="DDX-uD-gB2"/>
-                            <constraint firstItem="cjL-YO-K6d" firstAttribute="centerY" secondItem="gyZ-LL-7Yv" secondAttribute="centerY" id="FSB-mJ-tlr"/>
+                            <constraint firstItem="FRi-tZ-p1g" firstAttribute="centerX" secondItem="jy5-U1-y9X" secondAttribute="centerX" constant="-4" id="8iA-aj-HL1"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" id="FrK-BX-vYG"/>
-                            <constraint firstItem="jy5-U1-y9X" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" id="Gtg-gA-geU"/>
+                            <constraint firstItem="jy5-U1-y9X" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" constant="4" id="Gtg-gA-geU"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="34/667" id="Joo-vh-r09"/>
-                            <constraint firstItem="gyZ-LL-7Yv" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" id="M6l-Xy-jfx"/>
+                            <constraint firstItem="gyZ-LL-7Yv" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" constant="52" id="M6l-Xy-jfx"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="30/667" id="MrO-Mo-4co"/>
-                            <constraint firstItem="qT3-pb-fN1" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" id="NKl-Vj-J5o"/>
+                            <constraint firstItem="qT3-pb-fN1" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" constant="51" id="NKl-Vj-J5o"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="21/667" id="P1O-ac-HPM"/>
-                            <constraint firstItem="cjL-YO-K6d" firstAttribute="trailing" secondItem="Qiu-ow-UU1" secondAttribute="trailing" id="POe-Qc-5GY"/>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="30/667" id="Rmx-xU-TlS"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="190/375" id="Udh-Pf-GLV"/>
-                            <constraint firstItem="jy5-U1-y9X" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="298/375" id="cPp-59-AOG"/>
+                            <constraint firstItem="FRi-tZ-p1g" firstAttribute="centerY" secondItem="jy5-U1-y9X" secondAttribute="centerY" id="cOt-IM-RNq"/>
+                            <constraint firstItem="jy5-U1-y9X" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="298/375" constant="9" id="cPp-59-AOG"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="top" secondItem="gyZ-LL-7Yv" secondAttribute="bottom" constant="35" id="h0w-UT-lN9"/>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="centerY" secondItem="2Aj-DS-uUi" secondAttribute="centerY" multiplier="0.7915" id="nhf-Kb-TQv"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="leading" secondItem="qT3-pb-fN1" secondAttribute="leading" id="qwQ-oY-psH"/>
-                            <constraint firstItem="Qiu-ow-UU1" firstAttribute="centerY" secondItem="qT3-pb-fN1" secondAttribute="centerY" id="rJS-BF-WWb"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="top" secondItem="qT3-pb-fN1" secondAttribute="bottom" constant="31" id="zPS-5C-2MB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Aj-DS-uUi"/>

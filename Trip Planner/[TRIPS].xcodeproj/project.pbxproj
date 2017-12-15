@@ -15,9 +15,12 @@
 		3D0EEBCB1FDB68DE00144495 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3D0EEBCA1FDB68DE00144495 /* Assets.xcassets */; };
 		3D0EEBCE1FDB68DE00144495 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0EEBCC1FDB68DE00144495 /* LaunchScreen.storyboard */; };
 		3D0EEBD61FDB6A9E00144495 /* Login.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3D0EEBD51FDB6A9E00144495 /* Login.storyboard */; };
+		3DC30C181FE45413006823AE /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C171FE45413006823AE /* TripTableViewCell.swift */; };
 		3DD862D61FE34DFA004A236B /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862D51FE34DFA004A236B /* CustomizableButton.swift */; };
 		3DD862DB1FE35043004A236B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862D91FE35043004A236B /* Client.swift */; };
 		3DD862DC1FE35043004A236B /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862DA1FE35043004A236B /* UserResource.swift */; };
+		3DD862DE1FE3564E004A236B /* ResourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862DD1FE3564E004A236B /* ResourceProtocol.swift */; };
+		3DD862E11FE447DB004A236B /* TripsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862E01FE447DB004A236B /* TripsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +34,12 @@
 		3D0EEBCD1FDB68DE00144495 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3D0EEBCF1FDB68DE00144495 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3D0EEBD51FDB6A9E00144495 /* Login.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Login.storyboard; sourceTree = "<group>"; };
+		3DC30C171FE45413006823AE /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		3DD862D51FE34DFA004A236B /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
 		3DD862D91FE35043004A236B /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		3DD862DA1FE35043004A236B /* UserResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
+		3DD862DD1FE3564E004A236B /* ResourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResourceProtocol.swift; sourceTree = "<group>"; };
+		3DD862E01FE447DB004A236B /* TripsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,10 +72,10 @@
 		3D0EEBC21FDB68DE00144495 /* [TRIPS] */ = {
 			isa = PBXGroup;
 			children = (
+				3DD862DF1FE35A67004A236B /* Controllers */,
 				3DD862D81FE35043004A236B /* Networking */,
 				3DD862D71FE34F54004A236B /* Views */,
 				3D0EEBC31FDB68DE00144495 /* AppDelegate.swift */,
-				3D0EEBC51FDB68DE00144495 /* LoginViewController.swift */,
 				3D0EEBD51FDB6A9E00144495 /* Login.storyboard */,
 				3D0EEBC71FDB68DE00144495 /* Main.storyboard */,
 				3D0EEBCA1FDB68DE00144495 /* Assets.xcassets */,
@@ -85,6 +91,7 @@
 				3D0B2E371FDB9D2200620B3D /* SpacedFontLabel.swift */,
 				3DD862D51FE34DFA004A236B /* CustomizableButton.swift */,
 				3D0B2E381FDB9D2200620B3D /* SpacedFontTextField.swift */,
+				3DC30C171FE45413006823AE /* TripTableViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -94,8 +101,18 @@
 			children = (
 				3DD862D91FE35043004A236B /* Client.swift */,
 				3DD862DA1FE35043004A236B /* UserResource.swift */,
+				3DD862DD1FE3564E004A236B /* ResourceProtocol.swift */,
 			);
 			path = Networking;
+			sourceTree = "<group>";
+		};
+		3DD862DF1FE35A67004A236B /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				3D0EEBC51FDB68DE00144495 /* LoginViewController.swift */,
+				3DD862E01FE447DB004A236B /* TripsViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -174,6 +191,9 @@
 				3D0B2E3A1FDB9D2300620B3D /* SpacedFontTextField.swift in Sources */,
 				3DD862DC1FE35043004A236B /* UserResource.swift in Sources */,
 				3D0EEBC61FDB68DE00144495 /* LoginViewController.swift in Sources */,
+				3DD862E11FE447DB004A236B /* TripsViewController.swift in Sources */,
+				3DC30C181FE45413006823AE /* TripTableViewCell.swift in Sources */,
+				3DD862DE1FE3564E004A236B /* ResourceProtocol.swift in Sources */,
 				3D0B2E391FDB9D2300620B3D /* SpacedFontLabel.swift in Sources */,
 				3DD862D61FE34DFA004A236B /* CustomizableButton.swift in Sources */,
 				3D0EEBC41FDB68DE00144495 /* AppDelegate.swift in Sources */,

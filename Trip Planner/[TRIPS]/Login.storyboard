@@ -74,10 +74,28 @@
                                     <action selector="loginUserButton:" destination="DMT-gT-9Rk" eventType="touchUpInside" id="V9t-M5-Gza"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN / SIGNUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-tZ-p1g" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
-                                <rect key="frame" x="117" y="392.5" width="141.5" height="16.5"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LOGIN " textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FRi-tZ-p1g" userLabel="LOGIN" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
+                                <rect key="frame" x="156.5" y="391.5" width="62" height="17"/>
                                 <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="14"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
+                                        <real key="value" value="2.25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bsw-Ek-Bf3">
+                                <rect key="frame" x="152" y="422" width="71" height="30"/>
+                                <color key="backgroundColor" red="0.89803921568627454" green="0.85490196078431369" blue="0.53455946180555558" alpha="0.0" colorSpace="custom" customColorSpace="sRGB"/>
+                                <connections>
+                                    <action selector="signupUserButton:" destination="DMT-gT-9Rk" eventType="touchUpInside" id="FtX-0a-S4Q"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SIGNUP" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07q-WS-Y9N" customClass="SpacedFontLabel" customModule="_TRIPS_" customModuleProvider="target">
+                                <rect key="frame" x="162" y="432" width="52" height="11.5"/>
+                                <fontDescription key="fontDescription" name="Helvetica-Bold" family="Helvetica" pointSize="10"/>
+                                <color key="textColor" red="0.89695030450820923" green="0.58335238695144653" blue="0.0078668994829058647" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="number" keyPath="characterSpacing">
@@ -90,18 +108,24 @@
                         <constraints>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" multiplier="1.16" constant="-25.999999999999972" id="33O-Gy-FcJ"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="centerY" secondItem="2Aj-DS-uUi" secondAttribute="centerY" multiplier="0.367" constant="24.435500000000005" id="4Pl-qW-KOO"/>
+                            <constraint firstItem="07q-WS-Y9N" firstAttribute="centerY" secondItem="Bsw-Ek-Bf3" secondAttribute="centerY" id="4yS-9Q-wPi"/>
                             <constraint firstItem="FRi-tZ-p1g" firstAttribute="centerX" secondItem="jy5-U1-y9X" secondAttribute="centerX" constant="-4" id="8iA-aj-HL1"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" id="FrK-BX-vYG"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" constant="4" id="Gtg-gA-geU"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="34/667" id="Joo-vh-r09"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" constant="52" id="M6l-Xy-jfx"/>
+                            <constraint firstItem="Bsw-Ek-Bf3" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="30/667" id="Mfb-dc-pa6"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="30/667" id="MrO-Mo-4co"/>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="256/375" constant="51" id="NKl-Vj-J5o"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="21/667" id="P1O-ac-HPM"/>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="height" secondItem="4Cf-oJ-khL" secondAttribute="height" multiplier="30/667" id="Rmx-xU-TlS"/>
                             <constraint firstItem="Pe2-Xz-srp" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="190/375" id="Udh-Pf-GLV"/>
+                            <constraint firstItem="Bsw-Ek-Bf3" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="71/375" id="VY8-nu-LfO"/>
+                            <constraint firstItem="Bsw-Ek-Bf3" firstAttribute="centerX" secondItem="2Aj-DS-uUi" secondAttribute="centerX" id="WNn-JM-xlL"/>
+                            <constraint firstItem="07q-WS-Y9N" firstAttribute="centerX" secondItem="Bsw-Ek-Bf3" secondAttribute="centerX" id="a6H-Qw-OV3"/>
                             <constraint firstItem="FRi-tZ-p1g" firstAttribute="centerY" secondItem="jy5-U1-y9X" secondAttribute="centerY" id="cOt-IM-RNq"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="width" secondItem="4Cf-oJ-khL" secondAttribute="width" multiplier="298/375" constant="9" id="cPp-59-AOG"/>
+                            <constraint firstItem="Bsw-Ek-Bf3" firstAttribute="top" secondItem="jy5-U1-y9X" secondAttribute="bottom" constant="5" id="e3b-mG-MHG"/>
                             <constraint firstItem="jy5-U1-y9X" firstAttribute="top" secondItem="gyZ-LL-7Yv" secondAttribute="bottom" constant="35" id="h0w-UT-lN9"/>
                             <constraint firstItem="qT3-pb-fN1" firstAttribute="centerY" secondItem="2Aj-DS-uUi" secondAttribute="centerY" multiplier="0.7915" id="nhf-Kb-TQv"/>
                             <constraint firstItem="gyZ-LL-7Yv" firstAttribute="leading" secondItem="qT3-pb-fN1" secondAttribute="leading" id="qwQ-oY-psH"/>
@@ -109,6 +133,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="2Aj-DS-uUi"/>
                     </view>
+                    <connections>
+                        <outlet property="userEmailTextField" destination="qT3-pb-fN1" id="OOz-5F-cE9"/>
+                        <outlet property="userPasswordTextField" destination="gyZ-LL-7Yv" id="lu7-rh-Blw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WOm-xX-B8G" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

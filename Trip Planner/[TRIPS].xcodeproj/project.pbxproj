@@ -18,6 +18,8 @@
 		3DC30C181FE45413006823AE /* TripTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C171FE45413006823AE /* TripTableViewCell.swift */; };
 		3DC30C1A1FE46591006823AE /* TripDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C191FE46591006823AE /* TripDetailsViewController.swift */; };
 		3DC30C1C1FE46F0A006823AE /* WaypointTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C1B1FE46F0A006823AE /* WaypointTableViewCell.swift */; };
+		3DC30C1F1FE5E03D006823AE /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C1E1FE5E03D006823AE /* User.swift */; };
+		3DC30C211FE5E152006823AE /* Trip.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DC30C201FE5E152006823AE /* Trip.swift */; };
 		3DD862D61FE34DFA004A236B /* CustomizableButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862D51FE34DFA004A236B /* CustomizableButton.swift */; };
 		3DD862DB1FE35043004A236B /* Client.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862D91FE35043004A236B /* Client.swift */; };
 		3DD862DC1FE35043004A236B /* UserResource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3DD862DA1FE35043004A236B /* UserResource.swift */; };
@@ -39,6 +41,8 @@
 		3DC30C171FE45413006823AE /* TripTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripTableViewCell.swift; sourceTree = "<group>"; };
 		3DC30C191FE46591006823AE /* TripDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TripDetailsViewController.swift; sourceTree = "<group>"; };
 		3DC30C1B1FE46F0A006823AE /* WaypointTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WaypointTableViewCell.swift; sourceTree = "<group>"; };
+		3DC30C1E1FE5E03D006823AE /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		3DC30C201FE5E152006823AE /* Trip.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trip.swift; sourceTree = "<group>"; };
 		3DD862D51FE34DFA004A236B /* CustomizableButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomizableButton.swift; sourceTree = "<group>"; };
 		3DD862D91FE35043004A236B /* Client.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Client.swift; sourceTree = "<group>"; };
 		3DD862DA1FE35043004A236B /* UserResource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserResource.swift; sourceTree = "<group>"; };
@@ -76,6 +80,7 @@
 		3D0EEBC21FDB68DE00144495 /* [TRIPS] */ = {
 			isa = PBXGroup;
 			children = (
+				3DC30C1D1FE5E02F006823AE /* Models */,
 				3DD862DF1FE35A67004A236B /* Controllers */,
 				3DD862D81FE35043004A236B /* Networking */,
 				3DD862D71FE34F54004A236B /* Views */,
@@ -87,6 +92,15 @@
 				3D0EEBCF1FDB68DE00144495 /* Info.plist */,
 			);
 			path = "[TRIPS]";
+			sourceTree = "<group>";
+		};
+		3DC30C1D1FE5E02F006823AE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3DC30C1E1FE5E03D006823AE /* User.swift */,
+				3DC30C201FE5E152006823AE /* Trip.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		3DD862D71FE34F54004A236B /* Views */ = {
@@ -194,6 +208,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DC30C1F1FE5E03D006823AE /* User.swift in Sources */,
 				3D0B2E3A1FDB9D2300620B3D /* SpacedFontTextField.swift in Sources */,
 				3DD862DC1FE35043004A236B /* UserResource.swift in Sources */,
 				3D0EEBC61FDB68DE00144495 /* LoginViewController.swift in Sources */,
@@ -205,6 +220,7 @@
 				3DC30C1C1FE46F0A006823AE /* WaypointTableViewCell.swift in Sources */,
 				3DC30C1A1FE46591006823AE /* TripDetailsViewController.swift in Sources */,
 				3D0EEBC41FDB68DE00144495 /* AppDelegate.swift in Sources */,
+				3DC30C211FE5E152006823AE /* Trip.swift in Sources */,
 				3DD862DB1FE35043004A236B /* Client.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
